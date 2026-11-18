@@ -1,0 +1,49 @@
+{
+  "name": "starter-frontend",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=22.0.0",
+    "npm": ">=10.0.0"
+  },
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "lint": "eslint",
+    "lint:fix": "eslint --fix",
+    "typecheck": "nuxt typecheck && tsc --noEmit -p tsconfig.test.json",
+    "test:unit": "vitest run --project unit --project nuxt",
+    "test:unit:watch": "vitest --project unit --project nuxt",
+    "test:coverage": "vitest run --project unit --project nuxt --coverage",
+    "test:e2e": "playwright test",
+    "test": "npm run test:unit && npm run test:e2e"
+  },
+  "dependencies": {
+    "@nuxt/ui": "^4.12.0",
+    "nuxt": "^4.6.4",
+    "tailwindcss": "^4.3.5",
+    "vue": "^3.5.45",
+    "vue-router": "^5.5.0"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^10.0.0",
+    "@nuxt/test-utils": "^4.4.0",
+    "@playwright/test": "^1.65.0",
+    "@vitest/coverage-istanbul": "^4.1.12",
+    "@vue/test-utils": "^2.5.1",
+    "eslint": "^10.14.0",
+    "happy-dom": "^21.0.4",
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.12",
+    "vue-tsc": "^3.3.14"
+  },
+  "allowScripts": {
+    "vue-demi@0.14.10": true,
+    "esbuild@0.28.2": true,
+    "esbuild@0.27.2": true,
+    "esbuild@0.27.7": true
+  }
+}

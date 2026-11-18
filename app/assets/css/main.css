@@ -1,0 +1,4 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+/* Import the project's design system here, e.g. @import "./my-design-system.css"; */
